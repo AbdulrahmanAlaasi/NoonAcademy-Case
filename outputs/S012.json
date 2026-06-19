@@ -1,0 +1,17 @@
+{
+  "student_id": "S012",
+  "name": "Amal Al-Juhani",
+  "campus": "C01",
+  "risk_tier": "Critical",
+  "risk_score": 90,
+  "risk_flags": [
+    "Critical quiz failure",
+    "Short sessions",
+    "Remedial track",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم أمل 👋 لاحظنا أنك واجهت تحديات في الاختبار الأخير، لكن لا تقلق - لديك 6 أيام لتحضير نفسك بشكل أفضل وأنا هنا لدعمك 💪 هل يمكننا حجز جلسة اليوم أو غدا لمراجعة المواضيع الصعبة معك؟",
+  "action": "Schedule an intensive one-on-one tutoring session with Amal today or tomorrow to target the specific topics from the failed quiz before the next assessment in 6 days.",
+  "reasoning": "Amal's critical quiz failure (28/100) combined with high overall risk score (72/100) and remedial track placement indicates immediate intervention is needed. With only 6 days until the next quiz, timely targeted support could prevent further academic decline.",
+  "generated_at": "2026-06-19T20:13:37.490869+00:00"
+}

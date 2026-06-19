@@ -1,0 +1,16 @@
+{
+  "student_id": "S004",
+  "name": "Fatima Al-Qahtani",
+  "campus": "C01",
+  "risk_tier": "High",
+  "risk_score": 72,
+  "risk_flags": [
+    "Critical quiz failure",
+    "Remedial track",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم فاطمة 👋 لاحظت أن درجة الاختبار الأخير كانت 42 درجة، وأنا هنا لمساعدتك تحسنيها 💪 عندك 6 أيام قبل الاختبار القادم، فلنشتغل مع بعض على الأجزاء اللي تحتاجي مساعدة فيها ✨",
+  "action": "Schedule a 30-minute one-on-one tutoring session with Fatima today or tomorrow to identify specific knowledge gaps from the failed quiz and create a targeted review plan for the remaining 6 days.",
+  "reasoning": "Fatima's critical quiz failure (42/100) on a remedial track indicates she is at significant academic risk despite perfect attendance. With 6 days until the next quiz and immediate facilitator contact available (0 days), swift intervention with targeted support can prevent further decline and build momentum.",
+  "generated_at": "2026-06-19T20:14:39.255768+00:00"
+}

@@ -1,0 +1,18 @@
+{
+  "student_id": "S126",
+  "name": "Sara Al-Shammari",
+  "campus": "C04",
+  "risk_tier": "Critical",
+  "risk_score": 100,
+  "risk_flags": [
+    "Critical quiz failure",
+    "Short sessions",
+    "Never contacted",
+    "Remedial track",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم سارة 👋 لاحظنا أنك حصلتِ على 29 في آخر اختبار، وأنا هنا لمساعدتك تحسني هذا الدرجة قبل الاختبار القادم في 6 أيام 💪 هل تحتاجين شرح إضافي أو لديكِ أسئلة؟",
+  "action": "Call Sara immediately today to understand barriers to her learning, assess her comprehension gaps, and establish a structured study plan with daily check-ins for the next 6 days.",
+  "reasoning": "Sara has never been contacted despite critical quiz failure (29/100) and being in remedial track, creating a high-risk window where immediate intervention could prevent further deterioration before her next assessment in one week.",
+  "generated_at": "2026-06-19T20:11:43.219642+00:00"
+}

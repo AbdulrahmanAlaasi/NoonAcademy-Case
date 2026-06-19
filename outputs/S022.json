@@ -1,0 +1,17 @@
+{
+  "student_id": "S022",
+  "name": "Nora Al-Qaisi",
+  "campus": "C01",
+  "risk_tier": "Critical",
+  "risk_score": 100,
+  "risk_flags": [
+    "Critical quiz failure",
+    "Never contacted",
+    "Remedial track",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم ورحمة الله نورة 👋 لاحظنا أنك حصلتِ على 32 في الاختبار الأخير، وأنا هنا لمساعدتك تحسني النتيجة 💪 عندنا 6 أيام قبل الاختبار القادم، هل نقدر نتفق على وقت نراجع فيه المادة معاً؟",
+  "action": "Call Nora today to establish initial contact, assess specific learning gaps in the quiz content, and schedule a mandatory tutoring session before the next quiz in 6 days.",
+  "reasoning": "Nora has never been contacted despite critical quiz failure (32/100) and critical risk status, representing an immediate intervention gap. Her perfect attendance shows commitment, making her highly responsive to personal outreach and support.",
+  "generated_at": "2026-06-19T20:11:25.190063+00:00"
+}

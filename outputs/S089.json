@@ -1,0 +1,17 @@
+{
+  "student_id": "S089",
+  "name": "Omar Al-Qaisi",
+  "campus": "C03",
+  "risk_tier": "Critical",
+  "risk_score": 96,
+  "risk_flags": [
+    "Critical quiz failure",
+    "Stale follow-up",
+    "Remedial track",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم ورحمة الله وبركاته يا عمر 👋\n\nلاحظت إنك حاضر في كل الجلسات وهذا رائع جداً! 💪 بس آخر اختبار كان فيه تحديات، وعندنا 6 أيام قبل الاختبار الجاي - خلينا نشتغل مع بعض على النقاط اللي تحتاج توضيح عشان تكون أقوى في المرة الجاية ✨",
+  "action": "Schedule an immediate 30-minute 1-on-1 tutoring session with Omar today or tomorrow to diagnose specific knowledge gaps from the failed quiz before the 6-day window closes.",
+  "reasoning": "Omar has perfect attendance but critical quiz failure (33%) on a remedial track with zero facilitator contact in 10 days—this combination signals he needs urgent academic intervention, not just encouragement. The 6-day countdown to the next quiz is a critical intervention window.",
+  "generated_at": "2026-06-19T20:13:27.111648+00:00"
+}

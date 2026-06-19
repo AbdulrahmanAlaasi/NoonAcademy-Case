@@ -1,0 +1,16 @@
+{
+  "student_id": "S161",
+  "name": "Omar Al-Qaisi",
+  "campus": "C04",
+  "risk_tier": "High",
+  "risk_score": 78,
+  "risk_flags": [
+    "Below passing threshold",
+    "Never contacted",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم ورحمة الله وبركاته يا عمر 👋 لاحظنا أنك حصلت على 59 في آخر اختبار وتحتاج فقط لنقاط قليلة للنجاح - أنت قريب جداً! 💪 معك 6 أيام قبل الاختبار القادم، هل تريد مساعدتي في المراجعة والاستعداد؟",
+  "action": "Call or text Omar today to introduce yourself, acknowledge his strong attendance, review the topics from the failed quiz, and create a 6-day study plan together before the next assessment.",
+  "reasoning": "Omar has perfect attendance but has never been contacted despite being at high risk with a below-passing quiz score (59/100). Early intervention now can leverage his demonstrated commitment and help him clear the passing threshold in just 6 days.",
+  "generated_at": "2026-06-19T20:14:32.765443+00:00"
+}

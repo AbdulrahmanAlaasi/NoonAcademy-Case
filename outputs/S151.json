@@ -1,0 +1,16 @@
+{
+  "student_id": "S151",
+  "name": "Khalid Al-Zahrani",
+  "campus": "C04",
+  "risk_tier": "High",
+  "risk_score": 78,
+  "risk_flags": [
+    "Below passing threshold",
+    "Never contacted",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم خالد، لاحظنا أنك تحضر الدروس بانتظام وهذا رائع جداً! 🌟 لديك 6 أيام قبل الاختبار القادم، وأنا هنا لمساعدتك للوصول لدرجة أعلى من 61. دعنا نخطط معاً لتحقيق ذلك.",
+  "action": "Call or WhatsApp Khalid today to introduce yourself, identify any learning obstacles blocking his progress from 61% to passing, and create a targeted study plan for the next 6 days before the quiz.",
+  "reasoning": "Khalid has never been contacted despite consistent attendance and a below-passing quiz score. Early facilitator intervention during this 6-day window before the next quiz offers a critical opportunity to prevent further academic decline and build an essential support relationship.",
+  "generated_at": "2026-06-19T20:14:29.541002+00:00"
+}

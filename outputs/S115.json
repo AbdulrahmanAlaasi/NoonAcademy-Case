@@ -1,0 +1,16 @@
+{
+  "student_id": "S115",
+  "name": "Khalid Al-Thani",
+  "campus": "C03",
+  "risk_tier": "High",
+  "risk_score": 78,
+  "risk_flags": [
+    "Below passing threshold",
+    "Never contacted",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "مرحبا خالد 👋 أتمنى أن تكون بخير! لاحظنا أن درجتك في الاختبار الأخير 65/100، وعندك 6 أيام قادمة لتحسينها 💪 هل تحتاج لأي مساعدة أو شرح إضافي قبل الاختبار القادم؟",
+  "action": "Call or message Khalid today to introduce yourself, assess his understanding of challenging topics, and create a targeted study plan for the next 6 days.",
+  "reasoning": "Khalid is at high risk (60/100) with below-passing quiz performance despite perfect attendance, indicating motivation but knowledge gaps. He has never been contacted by a facilitator, so establishing initial contact and support is critical to prevent further decline.",
+  "generated_at": "2026-06-19T20:14:19.788259+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "student_id": "S073",
+  "name": "Yousef Al-Saud",
+  "campus": "C02",
+  "risk_tier": "Critical",
+  "risk_score": 96,
+  "risk_flags": [
+    "Critical quiz failure",
+    "Stale follow-up",
+    "Remedial track",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم يوسف 👋 لاحظنا أنك واجهت صعوبة في الاختبار الأخير (27/100)، لكن حضورك المميز يدل على التزامك وإصرارك 💪 عندنا 6 أيام قبل الاختبار القادم، خلينا نشتغل معاً على المواضيع الصعبة ونجهزك بشكل أفضل.",
+  "action": "Schedule an immediate 1-on-1 support session with Yousef today to diagnose his quiz failure points and create a focused 6-day study plan for remediation.",
+  "reasoning": "Yousef has been out of contact for 11 days and is facing a critical quiz performance gap (27/100) despite perfect attendance, indicating motivation but knowledge gaps. With only 6 days until the next assessment, urgent intervention is needed to prevent further failure and potential dropout from the remedial track.",
+  "generated_at": "2026-06-19T20:13:19.258871+00:00"
+}

@@ -1,0 +1,18 @@
+{
+  "student_id": "S108",
+  "name": "Amal Al-Subai",
+  "campus": "C03",
+  "risk_tier": "Critical",
+  "risk_score": 100,
+  "risk_flags": [
+    "Critical quiz failure",
+    "Short sessions",
+    "Stale follow-up",
+    "Remedial track",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم أمل 👋 لاحظت أنك لم تتواصل معنا من فترة، وأنا قلق عليك خاصة مع الاختبار القادم بعد 6 أيام 📚 دعنا نركز معاً على تحسين نتائجك - هل تقدر تلتقيني اليوم أو غداً؟ 💪",
+  "action": "Call Amal immediately (not message) to conduct a 20-minute emergency tutoring session on the quiz topics and establish a daily check-in schedule through next week.",
+  "reasoning": "Amal is in critical danger of failing out despite perfect attendance; the 11-day communication gap combined with 28/100 quiz score and only 6 days until the next assessment requires urgent intervention to prevent course failure.",
+  "generated_at": "2026-06-19T20:11:36.487588+00:00"
+}

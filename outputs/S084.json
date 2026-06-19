@@ -1,0 +1,18 @@
+{
+  "student_id": "S084",
+  "name": "Amal Al-Subai",
+  "campus": "C03",
+  "risk_tier": "Critical",
+  "risk_score": 100,
+  "risk_flags": [
+    "Critical quiz failure",
+    "Short sessions",
+    "Stale follow-up",
+    "Remedial track",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم أمل 👋 لاحظنا أنك تحتاج دعم إضافي للتحضير للاختبار القادم خلال 6 أيام، وأنا هنا لمساعدتك! دعنا نعمل معاً على تحسين درجاتك في الأسئلة التي واجهتك صعوبة فيها 💪",
+  "action": "Schedule an urgent 1-on-1 session with Amal today or tomorrow to review the quiz topics with targeted practice problems and identify knowledge gaps.",
+  "reasoning": "Amal shows perfect attendance but is critically at-risk with a 26/100 quiz score and 11 days without contact. With only 6 days until the next quiz, immediate intervention is essential to prevent further failure and maintain engagement.",
+  "generated_at": "2026-06-19T20:11:28.033189+00:00"
+}

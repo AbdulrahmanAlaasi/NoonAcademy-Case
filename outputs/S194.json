@@ -1,0 +1,18 @@
+{
+  "student_id": "S194",
+  "name": "Layla Al-Mutairi",
+  "campus": "C05",
+  "risk_tier": "Critical",
+  "risk_score": 100,
+  "risk_flags": [
+    "Critical quiz failure",
+    "Short sessions",
+    "Never contacted",
+    "Remedial track",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم لاييلا 👋 أنا هنا لدعمك في مادتك، وأنا متأكد أنك تستطيعين تحسين درجاتك! عندك 6 أيام قبل الاختبار القادم، فلنعمل معاً على فهم المواضيع الصعبة 💪",
+  "action": "Schedule an urgent one-on-one session with Layla today or tomorrow to assess specific learning gaps from the quiz and create a focused 6-day study plan.",
+  "reasoning": "Layla has never been contacted by a facilitator despite critical quiz failure (11/100) and is in remedial track. Her perfect attendance shows motivation and willingness to engage—immediate personalized support can redirect this engagement toward academic improvement before the next quiz.",
+  "generated_at": "2026-06-19T20:12:35.569694+00:00"
+}

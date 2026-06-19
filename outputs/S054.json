@@ -1,0 +1,17 @@
+{
+  "student_id": "S054",
+  "name": "Sara Al-Khalifa",
+  "campus": "C02",
+  "risk_tier": "Critical",
+  "risk_score": 96,
+  "risk_flags": [
+    "Critical quiz failure",
+    "Stale follow-up",
+    "Remedial track",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم سارة 👋 أتمنى تكوني بخير! لاحظت إنك اتشتركتي بكل الدروس وهذا رائع منك 💪 بس نقدر نحسن درجتك في الاختبار الجاي، فيه 6 أيام بس ونقدر نركز على المواضيع الصعبة معاك. خليني أعرف متى تقدري تاخذي وقت نذاكر سوا؟ 💙",
+  "action": "Schedule an urgent 1-on-1 tutoring session with Sara today to review the quiz topics she struggled with, given the 6-day timeline and 10-day communication gap.",
+  "reasoning": "Sara has perfect attendance but scored critically low (36%) on the recent quiz with no facilitator contact for 10 days. With only 6 days until the next quiz and her high risk status, immediate intervention could prevent further failure and disengagement.",
+  "generated_at": "2026-06-19T20:13:08.423797+00:00"
+}

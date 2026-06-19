@@ -1,0 +1,16 @@
+{
+  "student_id": "S190",
+  "name": "Nora Al-Saud",
+  "campus": "C05",
+  "risk_tier": "High",
+  "risk_score": 72,
+  "risk_flags": [
+    "Critical quiz failure",
+    "Remedial track",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم نور 👋 لاحظت أن درجة الاختبار الأخير كانت 46، وأنا هنا لأساعدك تحسنيها في الاختبار القادم خلال 6 أيام 💪 هل تحتاجين إلى شرح إضافي أو جلسة مراجعة؟",
+  "action": "Schedule a 30-minute focused review session with Nora today covering the concepts from the failed quiz before the next assessment in 6 days.",
+  "reasoning": "Nora's critical quiz failure (46/100) combined with medium-risk status requires immediate intervention. With 6 days until the next quiz and zero days since last contact, prompt targeted support now can prevent further skill gaps and boost her confidence in the remedial track.",
+  "generated_at": "2026-06-19T20:14:49.371772+00:00"
+}

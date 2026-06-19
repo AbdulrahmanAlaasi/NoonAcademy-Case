@@ -1,0 +1,18 @@
+{
+  "student_id": "S199",
+  "name": "Khalid Al-Zahrani",
+  "campus": "C05",
+  "risk_tier": "Critical",
+  "risk_score": 100,
+  "risk_flags": [
+    "Critical quiz failure",
+    "Short sessions",
+    "Never contacted",
+    "Remedial track",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم خالد 👋 لاحظنا أن درجة الاختبار الأخير كانت 9/100، وأنا هنا لمساعدتك تحسن أدائك في الاختبار القادم بعد 6 أيام 💪 هل تقدر نتواصل اليوم أو بكره عشان نركز على المواضيع الصعبة؟",
+  "action": "Call or message Khalid immediately today to schedule a 1-on-1 tutoring session before the quiz in 6 days, focusing on the concepts from his failed quiz.",
+  "reasoning": "Khalid has a critical risk score with near-zero quiz performance (9/100) but perfect attendance, indicating motivation despite struggle; he has never been contacted by a facilitator despite being in remedial track, and has only 6 days to prepare for the next assessment.",
+  "generated_at": "2026-06-19T20:12:39.362882+00:00"
+}

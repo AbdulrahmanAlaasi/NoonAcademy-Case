@@ -1,0 +1,17 @@
+{
+  "student_id": "S196",
+  "name": "Fatima Al-Ghamdi",
+  "campus": "C05",
+  "risk_tier": "Critical",
+  "risk_score": 90,
+  "risk_flags": [
+    "Critical quiz failure",
+    "Short sessions",
+    "Remedial track",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم فاطمة 🌟 أنا لاحظت أن درجة الاختبار الأخير كانت 45، لكن أنتِ قادرة على أكتر من كذا وأنا هنا عشان نساعدك تحسني نتيجتك قبل الاختبار الجاي في 6 أيام. هل نقدر نشتغل مع بعض على المواضيع الصعبة؟ 💪",
+  "action": "Schedule an immediate 1-on-1 session with Fatima today to identify specific knowledge gaps from the failed quiz and create a targeted 6-day review plan.",
+  "reasoning": "Fatima is in critical risk with a 72/100 risk score and quiz failure (45/100), but her 100% attendance and zero days without contact show strong engagement—immediate targeted intervention can reverse her trajectory before the next quiz in 6 days.",
+  "generated_at": "2026-06-19T20:13:48.540196+00:00"
+}

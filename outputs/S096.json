@@ -1,0 +1,18 @@
+{
+  "student_id": "S096",
+  "name": "Amal Al-Salem",
+  "campus": "C03",
+  "risk_tier": "Critical",
+  "risk_score": 100,
+  "risk_flags": [
+    "Critical quiz failure",
+    "Short sessions",
+    "Stale follow-up",
+    "Remedial track",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم أمال 👋 كيف حالك؟ لاحظنا أنك لم تتواصلي معنا مؤخراً وأردنا التأكد من أنك بخير 💙 عندك 6 أيام قبل الاختبار القادم وأنا هنا لمساعدتك تحضري بشكل أفضل من المرة الاللي فاتت - هل تقدري نحدد وقت نركز فيه على المواضيع الصعبة؟",
+  "action": "Schedule an immediate 1-on-1 session with Amal within the next 48 hours to review the concepts from her failed quiz and create a focused study plan for the remaining 6 days.",
+  "reasoning": "Amal is in critical risk with a near-zero quiz score despite perfect attendance, indicating she's struggling with comprehension rather than engagement. The 11-day communication gap combined with only 6 days until the next quiz represents a critical intervention window where immediate support could prevent further failure.",
+  "generated_at": "2026-06-19T20:11:32.087344+00:00"
+}

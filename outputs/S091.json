@@ -1,0 +1,16 @@
+{
+  "student_id": "S091",
+  "name": "Khalid Al-Thani",
+  "campus": "C03",
+  "risk_tier": "High",
+  "risk_score": 72,
+  "risk_flags": [
+    "Critical quiz failure",
+    "Remedial track",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم خالد 👋 لاحظنا أن درجة الاختبار الأخير كانت 48، لكن عندك 6 أيام لتحسينها والنقاط الإيجابية في حضورك ممتازة! 💪 نريد نساعدك تركز على المواضيع الصعبة - هل نقدر نلتقي غدا لشرح نقاط معينة؟",
+  "action": "Schedule a focused 30-minute review session with Khalid today to identify specific topics from the failed quiz and create a targeted study plan for the 6 days remaining.",
+  "reasoning": "Khalid's medium risk score is driven by the critical quiz failure (48/100), but his strong attendance (80%) and immediate facilitator contact (0 days) indicate high intervention potential. With 6 days until the next quiz, timely targeted support can likely reverse this trajectory.",
+  "generated_at": "2026-06-19T20:14:43.237588+00:00"
+}

@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boon Academy · Facilitator Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,700;1,9..144,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --paper:       #f4ede0;
+      --paper-2:     #ebe1cf;
+      --paper-3:     #e0d4be;
+      --ink:         #2a2520;
+      --ink-soft:    #5a4f44;
+      --ink-faint:   #9a8f84;
+      --accent:      oklch(0.62 0.14 35);
+      --accent-soft: oklch(0.78 0.08 35);
+      --accent-dim:  oklch(0.92 0.04 35);
+      --line:        rgba(58, 47, 38, 0.18);
+      --line-strong: rgba(58, 47, 38, 0.35);
+      --radius:      20px;
+      --radius-sm:   12px;
+
+      /* tier colors — warm, not clinical */
+      --critical:    #c0392b;
+      --critical-bg: #fdf0ee;
+      --high:        #d35400;
+      --high-bg:     #fef5ed;
+      --medium:      #7a6a00;
+      --medium-bg:   #fffbe8;
+      --low:         #2d6a4f;
+      --low-bg:      #edf7f2;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Fraunces', ui-serif, Georgia, serif;
+      background: var(--paper);
+      color: var(--ink);
+      min-height: 100vh;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* ── Topbar ─────────────────────────────────────────── */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--paper);
+      border-bottom: 1px solid var(--line-strong);
+      padding: 0 28px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .topbar-left {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+    }
+
+    .topbar-wordmark {
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      color: var(--ink);
+    }
+
+    .topbar-sep {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px;
+      color: var(--ink-faint);
+    }
+
+    .topbar-subtitle {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      color: var(--ink-soft);
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+    }
+
+    .topbar-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .campus-filter {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px;
+      background: var(--paper-2);
+      border: 1px solid var(--line-strong);
+      border-radius: var(--radius-sm);
+      color: var(--ink);
+      padding: 6px 10px;
+      cursor: pointer;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    .campus-filter:focus { border-color: var(--accent); }
+
+    .refresh-btn {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      background: none;
+      border: 1px solid var(--line-strong);
+      border-radius: var(--radius-sm);
+      color: var(--ink-soft);
+      padding: 6px 10px;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .refresh-btn:hover { background: var(--paper-2); color: var(--ink); }
+    .refresh-btn.spinning { opacity: 0.5; pointer-events: none; }
+
+    /* ── Layout ─────────────────────────────────────────── */
+    .app {
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      grid-template-rows: auto 1fr;
+      gap: 0;
+      height: calc(100vh - 60px);
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    /* ── Summary Bar ────────────────────────────────────── */
+    .summary-bar {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      border-bottom: 1px solid var(--line);
+      padding: 20px 28px;
+      gap: 12px;
+    }
+
+    .stat-card {
+      background: var(--paper-2);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      padding: 16px 18px;
+    }
+
+    .stat-label {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+      margin-bottom: 6px;
+    }
+
+    .stat-value {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1;
+      color: var(--ink);
+    }
+
+    .stat-card.critical .stat-value { color: var(--critical); }
+    .stat-card.high .stat-value     { color: var(--high); }
+    .stat-card.rate .stat-value     { color: var(--accent); }
+
+    .stat-sub {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10px;
+      color: var(--ink-faint);
+      margin-top: 4px;
+    }
+
+    /* ── Student List ───────────────────────────────────── */
+    .student-list-pane {
+      grid-column: 1;
+      overflow-y: auto;
+      padding: 20px 24px;
+      border-right: 1px solid var(--line);
+    }
+
+    .pane-header {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .pane-title {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--ink-soft);
+      font-family: 'IBM Plex Mono', monospace;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .pane-count {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      color: var(--ink-faint);
+    }
+
+    .student-card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
+      margin-bottom: 8px;
+      cursor: pointer;
+      transition: all 0.12s ease;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 8px;
+      align-items: start;
+    }
+    .student-card:hover {
+      background: var(--paper-2);
+      border-color: var(--line-strong);
+      transform: translateY(-1px);
+      box-shadow: 0 2px 8px rgba(42, 37, 32, 0.06);
+    }
+    .student-card.selected {
+      background: var(--paper-2);
+      border-color: var(--accent);
+      box-shadow: 0 0 0 2px var(--accent-dim);
+    }
+
+    .student-name {
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--ink);
+      margin-bottom: 3px;
+    }
+
+    .student-meta {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10px;
+      color: var(--ink-faint);
+      letter-spacing: 0.2px;
+    }
+
+    .student-flags {
+      margin-top: 6px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+
+    .flag-chip {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 9px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: var(--paper-3);
+      color: var(--ink-soft);
+      border: 1px solid var(--line);
+    }
+
+    .risk-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10px;
+      font-weight: 500;
+      padding: 4px 9px;
+      border-radius: 6px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .risk-badge.Critical { background: var(--critical-bg); color: var(--critical); border: 1px solid rgba(192,57,43,0.2); }
+    .risk-badge.High     { background: var(--high-bg);     color: var(--high);     border: 1px solid rgba(211,84,0,0.2); }
+    .risk-badge.Medium   { background: var(--medium-bg);   color: var(--medium);   border: 1px solid rgba(122,106,0,0.2); }
+    .risk-badge.Low      { background: var(--low-bg);      color: var(--low);      border: 1px solid rgba(45,106,79,0.2); }
+
+    .score-ring {
+      display: inline-block;
+      font-weight: 700;
+      font-size: 11px;
+    }
+
+    /* ── Brief Panel ────────────────────────────────────── */
+    .brief-pane {
+      grid-column: 2;
+      overflow-y: auto;
+      padding: 24px 22px;
+      background: var(--paper);
+    }
+
+    .empty-state {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: var(--ink-faint);
+      gap: 10px;
+    }
+
+    .empty-icon {
+      font-size: 32px;
+      opacity: 0.4;
+    }
+
+    .empty-text {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.3px;
+    }
+
+    .brief-header {
+      margin-bottom: 20px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brief-student-name {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 4px;
+    }
+
+    .brief-meta {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10px;
+      color: var(--ink-soft);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .brief-meta span { display: flex; align-items: center; gap: 4px; }
+
+    .brief-section {
+      margin-bottom: 18px;
+    }
+
+    .brief-section-label {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 9px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      margin-bottom: 8px;
+    }
+
+    .brief-section-body {
+      background: var(--paper-2);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
+      font-size: 14px;
+      line-height: 1.65;
+      color: var(--ink);
+    }
+
+    /* Arabic WhatsApp message */
+    .whatsapp-block {
+      background: var(--paper-2);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
+      direction: rtl;
+      text-align: right;
+      font-size: 15px;
+      line-height: 1.75;
+      color: var(--ink);
+      position: relative;
+    }
+
+    .whatsapp-block::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: #25D366;
+      border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+      opacity: 0.7;
+    }
+
+    .copy-btn {
+      margin-top: 8px;
+      width: 100%;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      background: none;
+      border: 1px solid var(--line-strong);
+      border-radius: 8px;
+      color: var(--ink-soft);
+      padding: 7px;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .copy-btn:hover { background: var(--paper-3); color: var(--ink); }
+    .copy-btn.copied { border-color: #25D366; color: #1a9e4a; }
+
+    .action-block {
+      background: var(--accent-dim);
+      border: 1px solid var(--accent-soft);
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
+      font-size: 14px;
+      color: var(--ink);
+      font-weight: 500;
+      line-height: 1.5;
+    }
+
+    .reasoning-block {
+      background: var(--paper-2);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
+      font-size: 13px;
+      color: var(--ink-soft);
+      font-style: italic;
+      line-height: 1.6;
+    }
+
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 18px;
+    }
+
+    .metric-cell {
+      background: var(--paper-2);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      padding: 10px 12px;
+    }
+
+    .metric-cell-label {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: 0.7px;
+      color: var(--ink-faint);
+      margin-bottom: 4px;
+    }
+
+    .metric-cell-value {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--ink);
+    }
+    .metric-cell-value.bad { color: var(--critical); }
+    .metric-cell-value.warn { color: var(--high); }
+    .metric-cell-value.ok { color: var(--low); }
+
+    .no-brief-note {
+      background: var(--paper-2);
+      border: 1px dashed var(--line-strong);
+      border-radius: var(--radius-sm);
+      padding: 20px;
+      text-align: center;
+      color: var(--ink-faint);
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+    }
+
+    /* ── Loading skeleton ───────────────────────────────── */
+    .skeleton {
+      background: linear-gradient(90deg, var(--paper-2) 25%, var(--paper-3) 50%, var(--paper-2) 75%);
+      background-size: 200% 100%;
+      animation: shimmer 1.4s infinite;
+      border-radius: 6px;
+    }
+    @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+
+    .skeleton-card {
+      height: 76px;
+      margin-bottom: 8px;
+      border-radius: var(--radius-sm);
+    }
+
+    /* ── Scrollbar ──────────────────────────────────────── */
+    ::-webkit-scrollbar { width: 5px; height: 5px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: var(--line-strong); border-radius: 10px; }
+
+    /* ── Responsive (tablet) ───────────────────────────── */
+    @media (max-width: 900px) {
+      .app {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+        height: auto;
+        min-height: calc(100vh - 60px);
+      }
+
+      .summary-bar {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 16px;
+        gap: 10px;
+      }
+
+      .student-list-pane {
+        grid-column: 1;
+        border-right: none;
+        border-bottom: 1px solid var(--line);
+        padding: 16px;
+        max-height: 60vh;
+      }
+
+      .brief-pane {
+        grid-column: 1;
+        padding: 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .topbar { padding: 0 16px; }
+      .topbar-subtitle { display: none; }
+      .summary-bar { grid-template-columns: 1fr 1fr; padding: 12px; }
+      .stat-value { font-size: 22px; }
+    }
+
+    /* ── Toast ──────────────────────────────────────────── */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(20px);
+      background: var(--ink);
+      color: var(--paper);
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      padding: 8px 16px;
+      border-radius: 20px;
+      opacity: 0;
+      transition: all 0.2s ease;
+      pointer-events: none;
+      z-index: 999;
+    }
+    .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+  </style>
+</head>
+<body>
+
+  <!-- Topbar -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <span class="topbar-wordmark">Boon Academy</span>
+      <span class="topbar-sep">//</span>
+      <span class="topbar-subtitle">Facilitator Dashboard</span>
+    </div>
+    <div class="topbar-right">
+      <select class="campus-filter" id="campusFilter" onchange="applyFilter()">
+        <option value="all">All Campuses</option>
+      </select>
+      <button class="refresh-btn" id="refreshBtn" onclick="loadData()">↺ Refresh</button>
+    </div>
+  </header>
+
+  <!-- App Grid -->
+  <main class="app">
+
+    <!-- Summary Stats -->
+    <section class="summary-bar" id="summaryBar">
+      <div class="stat-card">
+        <div class="stat-label">Total Students</div>
+        <div class="stat-value" id="statTotal">—</div>
+        <div class="stat-sub">across all campuses</div>
+      </div>
+      <div class="stat-card critical">
+        <div class="stat-label">Critical Risk</div>
+        <div class="stat-value" id="statCritical">—</div>
+        <div class="stat-sub">immediate action needed</div>
+      </div>
+      <div class="stat-card high">
+        <div class="stat-label">High Risk</div>
+        <div class="stat-value" id="statHigh">—</div>
+        <div class="stat-sub">intervene this week</div>
+      </div>
+      <div class="stat-card rate">
+        <div class="stat-label">Intervention Rate</div>
+        <div class="stat-value" id="statRate">—</div>
+        <div class="stat-sub">briefs generated / at-risk</div>
+      </div>
+    </section>
+
+    <!-- Student List -->
+    <section class="student-list-pane">
+      <div class="pane-header">
+        <span class="pane-title">Students</span>
+        <span class="pane-count" id="listCount"></span>
+      </div>
+      <div id="studentList">
+        <!-- skeleton loading -->
+        <div class="skeleton skeleton-card"></div>
+        <div class="skeleton skeleton-card"></div>
+        <div class="skeleton skeleton-card"></div>
+        <div class="skeleton skeleton-card"></div>
+        <div class="skeleton skeleton-card"></div>
+      </div>
+    </section>
+
+    <!-- Brief Panel -->
+    <aside class="brief-pane" id="briefPane">
+      <div class="empty-state" id="emptyState">
+        <div class="empty-icon">◎</div>
+        <div class="empty-text">select a student<br/>to view their brief</div>
+      </div>
+      <div id="briefContent" style="display:none;"></div>
+    </aside>
+
+  </main>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <script>
+    // ── State ────────────────────────────────────────────
+    let allStudents = [];
+    let selectedId = null;
+
+    // ── Boot ─────────────────────────────────────────────
+    document.addEventListener('DOMContentLoaded', loadData);
+
+    async function loadData() {
+      const btn = document.getElementById('refreshBtn');
+      btn.classList.add('spinning');
+      btn.textContent = '↺ Loading…';
+
+      try {
+        const [studentsRes, summaryRes] = await Promise.all([
+          fetch('/api/students'),
+          fetch('/api/summary'),
+        ]);
+
+        if (!studentsRes.ok || !summaryRes.ok) throw new Error('API error');
+
+        allStudents = await studentsRes.json();
+        const summary = await summaryRes.json();
+
+        populateCampusFilter(allStudents);
+        renderSummary(summary);
+        renderStudentList(allStudents);
+
+      } catch (err) {
+        showToast('Failed to load data — is the server running?');
+        console.error(err);
+      } finally {
+        btn.classList.remove('spinning');
+        btn.textContent = '↺ Refresh';
+      }
+    }
+
+    // ── Campus filter ─────────────────────────────────────
+    function populateCampusFilter(students) {
+      const select = document.getElementById('campusFilter');
+      const campuses = [...new Set(students.map(s => s.campus))].sort();
+      // Keep 'All Campuses', clear rest
+      while (select.options.length > 1) select.remove(1);
+      campuses.forEach(c => {
+        const opt = document.createElement('option');
+        opt.value = c;
+        opt.textContent = c;
+        select.appendChild(opt);
+      });
+    }
+
+    function applyFilter() {
+      const campus = document.getElementById('campusFilter').value;
+      const filtered = campus === 'all' ? allStudents : allStudents.filter(s => s.campus === campus);
+      renderStudentList(filtered);
+      // Clear brief if selected student not in filtered list
+      if (selectedId && !filtered.find(s => s.student_id === selectedId)) {
+        clearBrief();
+      }
+    }
+
+    // ── Summary ──────────────────────────────────────────
+    function renderSummary(summary) {
+      document.getElementById('statTotal').textContent = summary.total ?? '—';
+      document.getElementById('statCritical').textContent = summary.by_tier?.Critical ?? '—';
+      document.getElementById('statHigh').textContent = summary.by_tier?.High ?? '—';
+      const rate = summary.intervention_rate;
+      document.getElementById('statRate').textContent = rate != null ? Math.round(rate * 100) + '%' : '—';
+    }
+
+    // ── Student list ─────────────────────────────────────
+    function renderStudentList(students) {
+      const list = document.getElementById('studentList');
+      const count = document.getElementById('listCount');
+      count.textContent = `${students.length} shown`;
+
+      if (!students.length) {
+        list.innerHTML = `<div class="no-brief-note">No students match this filter.</div>`;
+        return;
+      }
+
+      // Sort: Critical first, then High, Medium, Low; within tier by score desc
+      const tierOrder = { Critical: 0, High: 1, Medium: 2, Low: 3 };
+      const sorted = [...students].sort((a, b) =>
+        (tierOrder[a.risk_tier] - tierOrder[b.risk_tier]) || (b.risk_score - a.risk_score)
+      );
+
+      list.innerHTML = sorted.map(s => `
+        <div
+          class="student-card ${selectedId === s.student_id ? 'selected' : ''}"
+          data-id="${s.student_id}"
+          onclick="selectStudent('${s.student_id}')"
+        >
+          <div>
+            <div class="student-name">${esc(s.name)}</div>
+            <div class="student-meta">
+              ${esc(s.campus)} · ${esc(s.track)} · ${esc(s.facilitator_id)}
+            </div>
+            <div class="student-flags">
+              ${(s.risk_flags || []).slice(0, 3).map(f =>
+                `<span class="flag-chip">${esc(f)}</span>`
+              ).join('')}
+            </div>
+          </div>
+          <div>
+            <span class="risk-badge ${s.risk_tier}">
+              <span class="score-ring">${s.risk_score}</span>
+              ${s.risk_tier}
+            </span>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    // ── Select student ────────────────────────────────────
+    async function selectStudent(studentId) {
+      selectedId = studentId;
+
+      // Update selected state in list
+      document.querySelectorAll('.student-card').forEach(el => {
+        el.classList.toggle('selected', el.dataset.id === studentId);
+      });
+
+      const student = allStudents.find(s => s.student_id === studentId);
+      if (!student) return;
+
+      // Show loading state in brief pane
+      document.getElementById('emptyState').style.display = 'none';
+      const content = document.getElementById('briefContent');
+      content.style.display = 'block';
+      content.innerHTML = renderBriefSkeleton(student);
+
+      if (!student.has_brief) {
+        content.innerHTML = renderBriefHeader(student) + `
+          <div class="no-brief-note">
+            No brief generated for this student.<br/>
+            <span style="color:var(--ink-faint); font-size:10px;">
+              Only Critical + top High/Medium students get LLM briefs. Rerun the pipeline to generate.
+            </span>
+          </div>
+        `;
+        return;
+      }
+
+      try {
+        const res = await fetch(`/api/brief/${studentId}`);
+        if (!res.ok) throw new Error('Brief not found');
+        const brief = await res.json();
+        content.innerHTML = renderBrief(brief);
+      } catch (err) {
+        content.innerHTML = renderBriefHeader(student) + `
+          <div class="no-brief-note">Could not load brief. Check the server logs.</div>
+        `;
+      }
+    }
+
+    function clearBrief() {
+      selectedId = null;
+      document.getElementById('emptyState').style.display = 'flex';
+      document.getElementById('briefContent').style.display = 'none';
+    }
+
+    // ── Render helpers ────────────────────────────────────
+    function renderBriefHeader(student) {
+      const badge = `<span class="risk-badge ${student.risk_tier}" style="font-size:11px;">${student.risk_score} · ${student.risk_tier}</span>`;
+      return `
+        <div class="brief-header">
+          <div class="brief-student-name">${esc(student.name)}</div>
+          <div class="brief-meta">
+            <span>${esc(student.campus)}</span>
+            <span>${esc(student.track)}</span>
+            <span>${esc(student.facilitator_id)}</span>
+            <span>${badge}</span>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderBriefSkeleton(student) {
+      return renderBriefHeader(student) + `
+        <div class="skeleton" style="height:60px; margin-bottom:18px;"></div>
+        <div class="skeleton" style="height:100px; margin-bottom:18px;"></div>
+        <div class="skeleton" style="height:50px;"></div>
+      `;
+    }
+
+    function renderBrief(brief) {
+      const student = allStudents.find(s => s.student_id === brief.student_id) || brief;
+
+      const quizClass = brief.last_quiz_score < 50 ? 'bad' : brief.last_quiz_score < 70 ? 'warn' : 'ok';
+      const attClass  = brief.attendance_rate < 0.6 ? 'bad' : brief.attendance_rate < 0.8 ? 'warn' : 'ok';
+
+      return `
+        ${renderBriefHeader(student)}
+
+        <div class="metrics-grid">
+          <div class="metric-cell">
+            <div class="metric-cell-label">Quiz Score</div>
+            <div class="metric-cell-value ${quizClass}">${brief.last_quiz_score ?? '—'}<span style="font-size:12px; font-weight:400;">/100</span></div>
+          </div>
+          <div class="metric-cell">
+            <div class="metric-cell-label">Attendance</div>
+            <div class="metric-cell-value ${attClass}">${brief.attendance_rate != null ? Math.round(brief.attendance_rate * 100) + '%' : '—'}</div>
+          </div>
+        </div>
+
+        ${brief.risk_flags?.length ? `
+          <div class="brief-section">
+            <div class="brief-section-label">Risk Flags</div>
+            <div style="display:flex; flex-wrap:wrap; gap:6px;">
+              ${brief.risk_flags.map(f => `<span class="flag-chip" style="font-size:10px; padding:3px 8px;">${esc(f)}</span>`).join('')}
+            </div>
+          </div>
+        ` : ''}
+
+        <div class="brief-section">
+          <div class="brief-section-label">Action Recommendation</div>
+          <div class="action-block">${esc(brief.action)}</div>
+        </div>
+
+        <div class="brief-section">
+          <div class="brief-section-label">WhatsApp Message · Arabic</div>
+          <div class="whatsapp-block" id="waMsg">${esc(brief.whatsapp_message)}</div>
+          <button class="copy-btn" id="copyBtn" onclick="copyWhatsApp()">Copy Message</button>
+        </div>
+
+        <div class="brief-section">
+          <div class="brief-section-label">Reasoning</div>
+          <div class="reasoning-block">${esc(brief.reasoning)}</div>
+        </div>
+
+        <div class="brief-section">
+          <div class="brief-section-label">Generated</div>
+          <div style="font-family:'IBM Plex Mono',monospace; font-size:10px; color:var(--ink-faint);">
+            ${brief.generated_at ? new Date(brief.generated_at).toLocaleString() : '—'}
+          </div>
+        </div>
+      `;
+    }
+
+    // ── Copy WhatsApp ─────────────────────────────────────
+    function copyWhatsApp() {
+      const msg = document.getElementById('waMsg')?.textContent?.trim();
+      if (!msg) return;
+      navigator.clipboard.writeText(msg).then(() => {
+        const btn = document.getElementById('copyBtn');
+        if (btn) {
+          btn.textContent = '✓ Copied';
+          btn.classList.add('copied');
+          setTimeout(() => {
+            btn.textContent = 'Copy Message';
+            btn.classList.remove('copied');
+          }, 2000);
+        }
+      }).catch(() => showToast('Copy failed — try selecting manually'));
+    }
+
+    // ── Toast ─────────────────────────────────────────────
+    function showToast(msg, duration = 3000) {
+      const t = document.getElementById('toast');
+      t.textContent = msg;
+      t.classList.add('show');
+      setTimeout(() => t.classList.remove('show'), duration);
+    }
+
+    // ── Escape HTML ───────────────────────────────────────
+    function esc(str) {
+      if (str == null) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "student_id": "S173",
+  "name": "Omar Al-Qahtani",
+  "campus": "C05",
+  "risk_tier": "High",
+  "risk_score": 78,
+  "risk_flags": [
+    "Below passing threshold",
+    "Never contacted",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم ورحمة الله وبركاته عمر 👋 لاحظنا أنك حصلت على 57 في الاختبار الأخير وتحضرك ممتاز جداً! 💪 عندك 6 أيام قبل الاختبار القادم، هل تريد مساعدة في المواضيع الصعبة؟ نحن هنا نساعدك.",
+  "action": "Call or message Omar today to introduce yourself, congratulate him on his perfect attendance, identify which topics he struggled with in the quiz, and arrange a focused 1-on-1 tutoring session before the next quiz in 6 days.",
+  "reasoning": "Omar has never been contacted despite showing strong commitment (100% attendance) and is currently below passing with a score of 57/100. Early intervention now can prevent further decline and leverage his existing engagement to improve quiz performance.",
+  "generated_at": "2026-06-19T20:14:35.898574+00:00"
+}

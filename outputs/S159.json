@@ -1,0 +1,18 @@
+{
+  "student_id": "S159",
+  "name": "Ahmad Al-Anzi",
+  "campus": "C04",
+  "risk_tier": "Critical",
+  "risk_score": 100,
+  "risk_flags": [
+    "Critical quiz failure",
+    "Short sessions",
+    "Never contacted",
+    "Remedial track",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم أحمد 👋 لاحظنا أنك لم تتواصل معنا بعد، وأنا هنا لمساعدتك في الاستعداد للاختبار القادم في 6 أيام 💪 درجة الاختبار السابق (23/100) تخبرنا أنك تحتاج دعم إضافي، فلنعمل معاً لتحسينها!",
+  "action": "Call Ahmad Al-Anzi today to establish first contact, assess learning barriers, and schedule 3 focused tutoring sessions before the quiz in 6 days.",
+  "reasoning": "Ahmad has never been contacted despite critical risk status and a failing quiz score (23/100). With only 6 days until the next assessment and zero facilitator engagement, immediate intervention is essential to prevent further academic decline and potential dropout.",
+  "generated_at": "2026-06-19T20:12:09.826197+00:00"
+}

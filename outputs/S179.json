@@ -1,0 +1,16 @@
+{
+  "student_id": "S179",
+  "name": "Hassan Al-Balawi",
+  "campus": "C05",
+  "risk_tier": "High",
+  "risk_score": 72,
+  "risk_flags": [
+    "Critical quiz failure",
+    "Remedial track",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم حسان 👋 لاحظت أن درجة الاختبار الأخير كانت 49، لكن أنت قادر على أكثر من هذا وأنا هنا لمساعدتك! 💪 عندنا 6 أيام قبل الاختبار القادم - هل نقعد نراجع المواضيع الصعبة معاً؟",
+  "action": "Schedule a 30-minute review session with Hassan today or tomorrow covering the topics he struggled with on the failed quiz.",
+  "reasoning": "Hassan shows perfect attendance and zero days without contact (strong engagement), but his critical quiz failure (49/100) in a remedial track indicates he needs immediate targeted intervention. With 6 days until the next quiz, early review sessions can prevent repeated failure.",
+  "generated_at": "2026-06-19T20:14:46.335051+00:00"
+}

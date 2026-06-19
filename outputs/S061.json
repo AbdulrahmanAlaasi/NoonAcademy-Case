@@ -1,0 +1,17 @@
+{
+  "student_id": "S061",
+  "name": "Yousef Al-Juhani",
+  "campus": "C02",
+  "risk_tier": "Critical",
+  "risk_score": 96,
+  "risk_flags": [
+    "Critical quiz failure",
+    "Stale follow-up",
+    "Remedial track",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم يوسف 👋 لاحظت إنك ما حصلت على النتيجة المطلوبة في الاختبار الأخير، بس أنا واثق إنك تقدر تحسنها في الاختبار الجاي. خلينا نتكلم اليوم أو غدا عشان نساعدك تجهز نفسك بشكل أفضل 💪",
+  "action": "Call or message Yousef today to schedule a 30-minute 1-on-1 tutoring session before the quiz in 6 days, focusing on the topics from the failed assessment.",
+  "reasoning": "Yousef is at critical risk with a 78/100 risk score and a failing quiz result (29%) despite perfect attendance, indicating he's engaged but struggling with content comprehension. With only 6 days until the next quiz and 11 days of no contact, immediate intervention is essential to prevent further academic decline and build his confidence.",
+  "generated_at": "2026-06-19T20:13:12.116954+00:00"
+}

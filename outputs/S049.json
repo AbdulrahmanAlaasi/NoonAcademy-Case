@@ -1,0 +1,17 @@
+{
+  "student_id": "S049",
+  "name": "Yousef Al-Mutlaq",
+  "campus": "C02",
+  "risk_tier": "Critical",
+  "risk_score": 96,
+  "risk_flags": [
+    "Critical quiz failure",
+    "Stale follow-up",
+    "Remedial track",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم يوسف 👋 لاحظنا أنك واجهت تحديات في الاختبار الأخير، لكن حضورك المميز يعكس التزامك الحقيقي! 💪 نريد أن نساعدك قبل الاختبار القادم بـ 6 أيام - هل يمكننا نقاش سريع اليوم أو غدا عن المواضيع التي تحتاج تقويتها؟",
+  "action": "Schedule an immediate 1-on-1 session with Yousef today or tomorrow to diagnose learning gaps from the failed quiz and create a targeted 6-day study plan before the next assessment.",
+  "reasoning": "Yousef has perfect attendance but scored 31/100 on the last quiz, indicating a critical comprehension gap rather than engagement issue. With only 6 days until the next quiz and 11 days since last contact, immediate intervention is essential to prevent repeated failure and disengagement.",
+  "generated_at": "2026-06-19T20:13:02.943657+00:00"
+}

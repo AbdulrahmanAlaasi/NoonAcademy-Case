@@ -1,0 +1,16 @@
+{
+  "student_id": "S104",
+  "name": "Maryam Al-Maliki",
+  "campus": "C03",
+  "risk_tier": "High",
+  "risk_score": 78,
+  "risk_flags": [
+    "Below passing threshold",
+    "Never contacted",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم مريم 👋 أتمنى أن تكوني بألف خير! لاحظنا أن درجتك في الاختبار الأخير 66، وعندك 6 أيام لتحسينها في الاختبار القادم 💪 هل تحتاجين أي مساعدة أو توضيح في المواضيع الصعبة؟",
+  "action": "Call or message Maryam today to understand her learning challenges, offer targeted study support, and create a study plan for the next 6 days before the quiz.",
+  "reasoning": "Maryam has never been contacted despite high risk status and a below-passing quiz score. Her perfect attendance shows motivation, making this a critical intervention window to prevent further decline before the next assessment.",
+  "generated_at": "2026-06-19T20:14:16.498639+00:00"
+}

@@ -1,0 +1,18 @@
+{
+  "student_id": "S132",
+  "name": "Amal Al-Subai",
+  "campus": "C04",
+  "risk_tier": "Critical",
+  "risk_score": 100,
+  "risk_flags": [
+    "Critical quiz failure",
+    "Short sessions",
+    "Never contacted",
+    "Remedial track",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم أمل 👋 لاحظنا أنك في المسار العلاجي وأحتاج أن أتأكد أنك بحاجة لمساعدة في المواد - درجتك في الاختبار الأخير 23 وعندنا 6 أيام قبل الاختبار الجاي، فهل نقدر نركز على الأجزاء الصعبة معك؟ 💪",
+  "action": "Call or message Amal today to schedule an immediate one-on-one tutoring session focused on quiz preparation for the next 6 days.",
+  "reasoning": "Amal has never been contacted despite critical risk status, a failing quiz score (23/100), and only 6 days until the next assessment. Early intervention is essential to prevent further deterioration and build foundational support.",
+  "generated_at": "2026-06-19T20:11:47.570810+00:00"
+}

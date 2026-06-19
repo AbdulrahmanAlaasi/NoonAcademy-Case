@@ -1,0 +1,18 @@
+{
+  "student_id": "S120",
+  "name": "Amal Al-Salem",
+  "campus": "C04",
+  "risk_tier": "Critical",
+  "risk_score": 100,
+  "risk_flags": [
+    "Critical quiz failure",
+    "Short sessions",
+    "Never contacted",
+    "Remedial track",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم أمال 👋 لاحظنا أنك حصلت على 25 درجة في الاختبار الأخير، وأنا هنا لمساعدتك تحسني مستواك قبل الاختبار القادم في 6 أيام 💪 هل تقدري نتكلم اليوم أو بكرة عن المواضيع الصعبة؟",
+  "action": "Call or message Amal immediately today to conduct a diagnostic 15-minute session identifying knowledge gaps from the failed quiz, then schedule 3 focused study sessions before the next quiz in 6 days.",
+  "reasoning": "Amal has never been contacted despite critical quiz failure (25/100), perfect attendance showing motivation, and only 6 days until the next assessment—immediate intervention can prevent further decline and leverage her commitment to attendance.",
+  "generated_at": "2026-06-19T20:11:40.245663+00:00"
+}

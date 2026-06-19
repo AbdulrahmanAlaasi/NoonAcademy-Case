@@ -1,0 +1,6 @@
+.env
+*.db
+About Me/
+__pycache__/
+*.pyc
+intervention_log.json

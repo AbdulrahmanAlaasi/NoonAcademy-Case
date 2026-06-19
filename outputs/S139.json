@@ -1,0 +1,16 @@
+{
+  "student_id": "S139",
+  "name": "Khalid Al-Thani",
+  "campus": "C04",
+  "risk_tier": "High",
+  "risk_score": 78,
+  "risk_flags": [
+    "Below passing threshold",
+    "Never contacted",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "مرحباً خالد! 👋 أتمنى أن تكون بخير. لاحظنا أنك حاصل على 62 في آخر اختبار وأنت حاضر بانتظام وهذا رائع! 🌟 لديك 6 أيام قبل الاختبار القادم - هل تحتاج إلى أي مساعدة أو شرح لأي جزء من المادة؟",
+  "action": "Contact Khalid via WhatsApp today to introduce yourself, discuss his quiz performance, and offer targeted academic support for the next 6 days before his quiz.",
+  "reasoning": "Khalid has never been contacted despite high risk status and a quiz score just above the passing threshold. His perfect attendance shows commitment, but he needs immediate facilitator engagement to prevent him from falling below passing before the next quiz.",
+  "generated_at": "2026-06-19T20:14:26.369932+00:00"
+}

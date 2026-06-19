@@ -1,0 +1,16 @@
+{
+  "student_id": "S014",
+  "name": "Layla Al-Subai",
+  "campus": "C01",
+  "risk_tier": "High",
+  "risk_score": 78,
+  "risk_flags": [
+    "Below passing threshold",
+    "Never contacted",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم ورحمة الله وبركاته ليلى 👋 أتمنى تكوني بألف خير! لاحظنا أنك حصلتِ على 65 في آخر اختبار وعندك 6 أيام قبل الاختبار الجديد 📚 نحن هنا نساعدك توصلي لدرجات أفضل، فلا تترددي في التواصل معنا إذا احتجتِ أي شيء ✨",
+  "action": "Call or message Layla today to introduce yourself, congratulate her on perfect attendance, and offer specific support for the upcoming quiz in 6 days.",
+  "reasoning": "Layla is at high risk despite perfect attendance and passing the quiz, indicating engagement but content mastery gaps. She has never been contacted by a facilitator, so this first outreach is critical to build rapport and provide targeted intervention before the next assessment.",
+  "generated_at": "2026-06-19T20:13:51.946255+00:00"
+}

@@ -1,0 +1,18 @@
+{
+  "student_id": "S149",
+  "name": "Omar Al-Qahtani",
+  "campus": "C04",
+  "risk_tier": "Critical",
+  "risk_score": 100,
+  "risk_flags": [
+    "Critical quiz failure",
+    "Short sessions",
+    "Never contacted",
+    "Remedial track",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم ورحمة الله عمر 👋\nلاحظنا أنك حصلت على 25 درجة في الاختبار الأخير، وأنا هنا لمساعدتك تحسن درجاتك قبل الاختبار القادم بـ 6 أيام 💪 هل تقدر نتواصل اليوم عشان نشتغل على المواضيع الصعبة معك؟",
+  "action": "Call Omar directly today to establish first contact, assess specific learning gaps from the quiz, and schedule an urgent tutoring session before the next quiz in 6 days.",
+  "reasoning": "Omar has never been contacted by a facilitator despite critical quiz failure (25/100) and is in remedial track—immediate intervention is essential to prevent further academic decline and provide personalized support within the narrow 6-day window.",
+  "generated_at": "2026-06-19T20:12:03.514869+00:00"
+}

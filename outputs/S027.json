@@ -1,0 +1,17 @@
+{
+  "student_id": "S027",
+  "name": "Ahmad Al-Salem",
+  "campus": "C01",
+  "risk_tier": "Critical",
+  "risk_score": 96,
+  "risk_flags": [
+    "Critical quiz failure",
+    "Stale follow-up",
+    "Remedial track",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم أحمد 👋 أتمنى تكون بخير! لاحظنا أن آخر اختبار كان فيه بعض التحديات، لكن ثقتنا فيك كبيرة وعندك 6 أيام لتحضير نفسك بشكل أقوى للاختبار الجاي 💪 هل تبغى نساعدك بأي شيء في الدروس؟",
+  "action": "Schedule an immediate 1:1 check-in with Ahmad today or tomorrow to diagnose the root cause of the quiz failure (concept gaps, test anxiety, or study method issues) and create a targeted 6-day prep plan.",
+  "reasoning": "Ahmad is at critical risk with a 78/100 risk score and 40/100 quiz failure, but his perfect attendance shows motivation and commitment. The 11-day facilitator contact gap during a remedial track with only 6 days to the next quiz creates an urgent window to intervene and redirect him toward success.",
+  "generated_at": "2026-06-19T20:12:47.956644+00:00"
+}

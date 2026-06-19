@@ -1,0 +1,18 @@
+{
+  "student_id": "S182",
+  "name": "Layla Al-Khaldi",
+  "campus": "C05",
+  "risk_tier": "Critical",
+  "risk_score": 100,
+  "risk_flags": [
+    "Critical quiz failure",
+    "Short sessions",
+    "Never contacted",
+    "Remedial track",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم يا ليلى 👋\nلاحظنا أنك حصلتِ على 15/100 في الاختبار الأخير، وأنا هنا لمساعدتك تحسني درجاتك قبل الاختبار الجاي في 6 أيام 💪\nهل نقدر نتواصل اليوم عشان نخطط طريقة تساعدك تركزي أكثر؟",
+  "action": "Schedule an urgent one-on-one session with Layla today or tomorrow to conduct a diagnostic assessment and create a personalized 6-day study plan before the next quiz.",
+  "reasoning": "Layla has never been contacted despite critical risk status and a failing quiz score of 15/100, making this her first intervention opportunity. With only 6 days until the next quiz and no established facilitator relationship, immediate personalized support is essential to prevent further academic decline.",
+  "generated_at": "2026-06-19T20:12:24.696006+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "student_id": "S033",
+  "name": "Abdullah Al-Saud",
+  "campus": "C01",
+  "risk_tier": "Critical",
+  "risk_score": 96,
+  "risk_flags": [
+    "Critical quiz failure",
+    "Stale follow-up",
+    "Remedial track",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم عبدالله 👋 أنا لاحظت أن درجة الاختبار الأخير كانت 30، لكن حضورك ممتاز وأنا متأكد أنك قادر تحسنها! عندنا 6 أيام قبل الاختبار الجاي - هل تقدر نلتقي غدا نركز على المواضيع الصعبة معك؟",
+  "action": "Schedule an urgent one-on-one tutoring session with Abdullah today for tomorrow or the next day, focusing on core concepts from the failed quiz.",
+  "reasoning": "Abdullah has a critical 10-day communication gap combined with a severe quiz failure (30/100), putting him at immediate risk of course failure despite perfect attendance. With only 6 days until the next quiz, immediate intervention and targeted support are essential to prevent further decline.",
+  "generated_at": "2026-06-19T20:12:51.370104+00:00"
+}

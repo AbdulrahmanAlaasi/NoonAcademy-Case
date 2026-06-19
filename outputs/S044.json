@@ -1,0 +1,17 @@
+{
+  "student_id": "S044",
+  "name": "Maryam Al-Faraj",
+  "campus": "C02",
+  "risk_tier": "Critical",
+  "risk_score": 96,
+  "risk_flags": [
+    "Critical quiz failure",
+    "Stale follow-up",
+    "Remedial track",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم مريم 👋 لاحظنا أن آخر اختبار كان صعب شوية، بس أنتِ قادرة تقدري أحسن من هيك! في 6 أيام الاختبار الجاي، وحنا هنساعدك تستعدي كويس. هل تقدري تلتقينا اليوم أو بكرة عشان نراجع المواضيع الصعبة؟",
+  "action": "Call Maryam today to schedule an urgent 1:1 review session focused on the quiz topics, addressing her critical 39/100 score and rebuilding confidence before the upcoming assessment in 6 days.",
+  "reasoning": "Maryam shows strong commitment (100% attendance) but is at critical academic risk with a failing quiz score and 10 days without contact. Immediate intervention is crucial to prevent disengagement and support her success in the remedial track.",
+  "generated_at": "2026-06-19T20:12:59.428072+00:00"
+}

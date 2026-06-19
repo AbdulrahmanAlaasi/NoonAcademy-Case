@@ -1,0 +1,18 @@
+{
+  "student_id": "S171",
+  "name": "Ahmad Al-Dossari",
+  "campus": "C05",
+  "risk_tier": "Critical",
+  "risk_score": 100,
+  "risk_flags": [
+    "Critical quiz failure",
+    "Short sessions",
+    "Never contacted",
+    "Remedial track",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم أحمد 👋 لاحظنا أنك لم تتواصل معنا بعد، وأنا هنا لمساعدتك في تحسين درجات الاختبار القادم 📚 دعنا نعمل معاً على الأسئلة الصعبة - لديك 6 أيام فقط وأنا واثق أنك ستحقق نتائج أفضل! 💪",
+  "action": "Call Ahmad today to conduct a 20-minute diagnostic session identifying which specific topics caused the 20/100 quiz failure, then schedule a daily 30-minute check-in for the next 6 days before the quiz.",
+  "reasoning": "Ahmad has never been contacted despite critical risk status (100/100) and a severe quiz failure (20/100), making immediate personal outreach essential to prevent further disengagement. His perfect attendance suggests willingness to participate—he needs targeted academic support and encouragement before the next assessment in 6 days.",
+  "generated_at": "2026-06-19T20:12:17.764321+00:00"
+}

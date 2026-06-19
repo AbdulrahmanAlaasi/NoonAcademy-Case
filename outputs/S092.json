@@ -1,0 +1,16 @@
+{
+  "student_id": "S092",
+  "name": "Maryam Al-Mansour",
+  "campus": "C03",
+  "risk_tier": "High",
+  "risk_score": 78,
+  "risk_flags": [
+    "Below passing threshold",
+    "Never contacted",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "مرحبا مريم 👋 نلاحظ أنك تحضري للامتحان القادم بعد 6 أيام، وأداؤك في آخر اختبار كان 63 درجة. نريد أن نساعدك للوصول لنتائج أفضل - هل تحتاجين لدعم إضافي أو توضيح أي مواضيع؟",
+  "action": "Call or message Maryam today to conduct a needs assessment and offer targeted tutoring support before her quiz in 6 days.",
+  "reasoning": "Maryam has never been contacted by a facilitator despite having high risk status and a below-passing quiz score (63/100). With 6 days until the next quiz and perfect attendance, immediate intervention can help her improve before reassessment.",
+  "generated_at": "2026-06-19T20:14:13.198204+00:00"
+}

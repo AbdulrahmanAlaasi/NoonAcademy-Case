@@ -1,0 +1,18 @@
+{
+  "student_id": "S145",
+  "name": "Yousef Al-Harbi",
+  "campus": "C04",
+  "risk_tier": "Critical",
+  "risk_score": 100,
+  "risk_flags": [
+    "Critical quiz failure",
+    "Low attendance",
+    "Short sessions",
+    "Remedial track",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم يوسف 👋 أنا هنا لدعمك في الاختبار القادم بعد 6 أيام، وأنا واثق أنك ستحقق نتائج أفضل هذه المرة 💪 هل يمكننا اجتماع اليوم أو غداً لمراجعة المواضيع الصعبة معاً؟",
+  "action": "Schedule an in-person or virtual session with Yousef today or tomorrow (within 24 hours) to review quiz content and create a 6-day study plan with daily checkpoints.",
+  "reasoning": "Yousef has a critical risk score with zero quiz performance and 50% attendance, putting him in immediate danger of course failure. With only 6 days until the next quiz and zero days since last facilitator contact, urgent intervention is essential to prevent further disengagement and build momentum for success.",
+  "generated_at": "2026-06-19T20:11:57.588212+00:00"
+}

@@ -1,0 +1,16 @@
+{
+  "student_id": "S029",
+  "name": "Omar Al-Zahrani",
+  "campus": "C01",
+  "risk_tier": "High",
+  "risk_score": 78,
+  "risk_flags": [
+    "Below passing threshold",
+    "Never contacted",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم ورحمة الله وبركاته عمر 👋 لاحظنا أن درجتك في الاختبار الأخير 68 وهذا يحتاج منك تركيز أكثر قبل الاختبار القادم بـ 6 أيام 📚 نحن هنا لمساعدتك تحسين أدائك، هل تحتاج شرح في أي نقطة معينة؟",
+  "action": "Call or message Omar today to introduce yourself, understand any learning challenges he's facing, and create a study plan together for the quiz in 6 days.",
+  "reasoning": "Omar has never been contacted despite scoring below the passing threshold and showing high risk. With 6 days until the next quiz and 100% attendance showing commitment, immediate facilitator contact can make a critical difference in improving his performance before the assessment.",
+  "generated_at": "2026-06-19T20:13:55.058257+00:00"
+}

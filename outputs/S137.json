@@ -1,0 +1,18 @@
+{
+  "student_id": "S137",
+  "name": "Omar Al-Qaisi",
+  "campus": "C04",
+  "risk_tier": "Critical",
+  "risk_score": 100,
+  "risk_flags": [
+    "Critical quiz failure",
+    "Short sessions",
+    "Never contacted",
+    "Remedial track",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم يا عمر 👋 لاحظنا أنك حصلت على 27/100 في الاختبار الأخير، وأنا هنا لأساعدك تحسن درجاتك قبل الاختبار القادم بـ 6 أيام 💪 هل تقدر نلتقي غدًا عشان نشتغل على النقاط الضعيفة معك؟",
+  "action": "Call Omar today to introduce yourself, assess specific learning gaps from the failed quiz, and schedule a one-on-one tutoring session within the next 48 hours.",
+  "reasoning": "Omar has never been contacted despite critical quiz failure and is on a remedial track, representing highest intervention risk. With 6 days until the next quiz and 100% attendance showing commitment, immediate intensive support could prevent further academic decline.",
+  "generated_at": "2026-06-19T20:11:50.721530+00:00"
+}

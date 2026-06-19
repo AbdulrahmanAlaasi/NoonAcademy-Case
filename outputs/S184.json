@@ -1,0 +1,17 @@
+{
+  "student_id": "S184",
+  "name": "Fatima Al-Shahrani",
+  "campus": "C05",
+  "risk_tier": "Critical",
+  "risk_score": 90,
+  "risk_flags": [
+    "Below passing threshold",
+    "Never contacted",
+    "Remedial track",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم فاطمة 👋 أنا هنا لدعمك في رحلتك التعليمية، وأرى أن لديك التزام رائع بالحضور 💪 لدينا 6 أيام فقط قبل الاختبار القادم، هل تريدين مساعدتي في المواضيع الصعبة؟",
+  "action": "Schedule an immediate one-on-one session with Fatima within the next 2 days to assess knowledge gaps and create a targeted 6-day study plan for the upcoming quiz.",
+  "reasoning": "Fatima has never been contacted despite being on the remedial track with a high-risk score and below-passing quiz performance. Her perfect attendance shows commitment and motivation—early intervention now can leverage this strength to improve her quiz score before the assessment in 6 days.",
+  "generated_at": "2026-06-19T20:13:44.712949+00:00"
+}

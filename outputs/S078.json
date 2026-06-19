@@ -1,0 +1,17 @@
+{
+  "student_id": "S078",
+  "name": "Sara Al-Shammari",
+  "campus": "C03",
+  "risk_tier": "Critical",
+  "risk_score": 96,
+  "risk_flags": [
+    "Critical quiz failure",
+    "Stale follow-up",
+    "Remedial track",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم سارة 👋 لاحظنا أنك حصلت على 30 في الاختبار الأخير، وأنا هنا لأساعدك تحسني درجاتك قبل الاختبار الجاي بـ 6 أيام 💪 هل تقدري نركز مع بعض على المواضيع الصعبة؟",
+  "action": "Schedule an urgent one-on-one tutoring session with Sara within 24 hours focused on the quiz topics, and review her specific misconceptions from the 30/100 score.",
+  "reasoning": "Sara's critical quiz failure (30/100) combined with 10 days without contact indicates urgent academic intervention needed before the next quiz in 6 days. Despite perfect attendance, her high risk score (78/100) suggests she's disengaged or struggling significantly and needs immediate targeted support to prevent further deterioration.",
+  "generated_at": "2026-06-19T20:13:22.929381+00:00"
+}

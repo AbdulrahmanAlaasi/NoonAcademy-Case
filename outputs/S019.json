@@ -1,0 +1,17 @@
+{
+  "student_id": "S019",
+  "name": "Khalid Al-Anzi",
+  "campus": "C01",
+  "risk_tier": "Critical",
+  "risk_score": 96,
+  "risk_flags": [
+    "Critical quiz failure",
+    "Stale follow-up",
+    "Remedial track",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم خالد 👋 لاحظنا أنك واجهت صعوبة في الاختبار الأخير (38/100)، لكن حضورك المنتظم يشير إلى التزامك الحقيقي 💪 دعنا نساعدك معاً قبل الاختبار القادم خلال 6 أيام - هل تستطيع أن نلتقي لمراجعة الأساسيات؟",
+  "action": "Schedule an immediate 1-on-1 remedial session with Khalid within 24 hours to diagnose gaps in foundational concepts before the quiz in 6 days.",
+  "reasoning": "Khalid shows critical risk due to severe quiz underperformance (38/100) combined with 10 days of lost facilitator contact, despite perfect attendance. Early intervention in the next 6 days is urgent to prevent further academic decline and potential dropout from the remedial track.",
+  "generated_at": "2026-06-19T20:12:42.825045+00:00"
+}

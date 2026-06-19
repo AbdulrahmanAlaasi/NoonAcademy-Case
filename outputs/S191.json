@@ -1,0 +1,16 @@
+{
+  "student_id": "S191",
+  "name": "Hassan Al-Khalifa",
+  "campus": "C05",
+  "risk_tier": "High",
+  "risk_score": 72,
+  "risk_flags": [
+    "Critical quiz failure",
+    "Remedial track",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم يا حسن 👋 لاحظنا أنك واجهت صعوبة في الاختبار الأخير وحصلت على 47، لكن حضورك ممتاز جداً وهذا يدل على التزامك 💪 لديك 6 أيام لنركز معاً على المواضيع الصعبة وتحسن درجتك في الاختبار القادم، أنا هنا لساعدتك 📚",
+  "action": "Schedule a 30-minute one-on-one tutoring session with Hassan today to identify which specific quiz topics caused him to score 47/100 and create a focused study plan for the next 6 days.",
+  "reasoning": "Hassan shows strong commitment (100% attendance, immediate contact maintained) but is failing academically (47/100). With 6 days before the next quiz and medium risk level, targeted intervention now can prevent him from falling further behind in the remedial track.",
+  "generated_at": "2026-06-19T20:14:53.046266+00:00"
+}

@@ -1,0 +1,16 @@
+{
+  "student_id": "S068",
+  "name": "Maryam Al-Qaisi",
+  "campus": "C02",
+  "risk_tier": "High",
+  "risk_score": 78,
+  "risk_flags": [
+    "Below passing threshold",
+    "Never contacted",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "مرحباً مريم! 👋 لاحظنا أن درجتك في الاختبار الأخير 65، وعندك 6 أيام قبل الاختبار القادم - هذا وقت رائع لنساعدك تحسّني درجاتك! 💪 هل تحتاجي لشرح أي مواضيع صعبة؟",
+  "action": "Contact Maryam today via WhatsApp to introduce yourself, congratulate her on perfect attendance, and schedule a 20-minute review session before the next quiz in 6 days.",
+  "reasoning": "Maryam has never been contacted despite high risk and a below-passing quiz score (65/100). Her perfect attendance shows commitment, making her highly responsive to early intervention. The 6-day window before the next quiz is critical to prevent further score decline.",
+  "generated_at": "2026-06-19T20:14:06.446025+00:00"
+}

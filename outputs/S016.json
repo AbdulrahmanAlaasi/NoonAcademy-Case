@@ -1,0 +1,17 @@
+{
+  "student_id": "S016",
+  "name": "Fatima Al-Khaldi",
+  "campus": "C01",
+  "risk_tier": "Critical",
+  "risk_score": 90,
+  "risk_flags": [
+    "Below passing threshold",
+    "Never contacted",
+    "Remedial track",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم فاطمة 👋 أتمنى تكوني بخير! لاحظت درجتك في الاختبار الأخير 55، وأنا هنا عشان ساعدك تحسني أدائك في الاختبار الجاي بعد 6 أيام 💪 نقدر نتواصل اليوم عشان أفهم أنا إيش اللي صعب عليك وأساعدك؟",
+  "action": "Call or message Fatima today to schedule a one-on-one tutoring session before the quiz in 6 days, focusing on the concepts where she scored lowest.",
+  "reasoning": "Fatima has never been contacted despite being in a high-risk remedial track and scoring below passing threshold (55/100). Her perfect attendance shows motivation, so immediate intervention can likely help her improve before the next quiz.",
+  "generated_at": "2026-06-19T20:13:41.327437+00:00"
+}

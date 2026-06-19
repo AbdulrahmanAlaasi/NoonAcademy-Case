@@ -1,0 +1,18 @@
+{
+  "student_id": "S177",
+  "name": "Abdullah Al-Otaibi",
+  "campus": "C05",
+  "risk_tier": "Critical",
+  "risk_score": 100,
+  "risk_flags": [
+    "Critical quiz failure",
+    "Short sessions",
+    "Never contacted",
+    "Remedial track",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم ورحمة الله وبركاته عبدالله 🌟\n\nلاحظت أنك لم تتواصل معنا بعد، وأنا هنا لمساعدتك في تحضيرك للاختبار القادم خلال 6 أيام 💪\n\nهيا بنا نركز معاً ونرفع درجتك - أنت قادر على ذلك إن شاء الله! 📚",
+  "action": "Call Abdullah directly today to introduce yourself, assess his main challenges with the material, and schedule a structured 1-on-1 tutoring session before the next quiz in 6 days.",
+  "reasoning": "Abdullah has never been contacted despite critical risk status and a failing quiz score (18/100). With only 6 days until the next quiz and no facilitator relationship established, immediate personal outreach is essential to prevent further decline and provide targeted academic support.",
+  "generated_at": "2026-06-19T20:12:21.127391+00:00"
+}

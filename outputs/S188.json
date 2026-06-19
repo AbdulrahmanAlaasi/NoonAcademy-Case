@@ -1,0 +1,18 @@
+{
+  "student_id": "S188",
+  "name": "Maryam Al-Mansour",
+  "campus": "C05",
+  "risk_tier": "Critical",
+  "risk_score": 100,
+  "risk_flags": [
+    "Critical quiz failure",
+    "Short sessions",
+    "Never contacted",
+    "Remedial track",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم مريم 👋 لاحظنا أنك لم تحصلي على الدرجة المطلوبة في الاختبار الأخير (13/100)، وأنا هنا لمساعدتك تحسني النتائج 💪 عندك 6 أيام قبل الاختبار القادم، فلنشتغل مع بعض على المواضيع الصعبة؟",
+  "action": "Call or message Maryam immediately today to schedule a one-on-one tutoring session covering the quiz content, since she has never been contacted and faces critical failure risk with only 6 days to the next assessment.",
+  "reasoning": "Maryam is in critical risk (100/100 score) with a severe quiz failure (13/100) and has never had facilitator contact despite perfect attendance, indicating she needs immediate personalized intervention. With only 6 days until the next quiz, urgent direct engagement is essential to prevent dropout and help her recover academically.",
+  "generated_at": "2026-06-19T20:12:28.262857+00:00"
+}

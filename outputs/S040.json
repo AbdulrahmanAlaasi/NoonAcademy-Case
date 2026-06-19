@@ -1,0 +1,16 @@
+{
+  "student_id": "S040",
+  "name": "Fatima Al-Maliki",
+  "campus": "C01",
+  "risk_tier": "High",
+  "risk_score": 78,
+  "risk_flags": [
+    "Below passing threshold",
+    "Never contacted",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم فاطمة 👋 نتمنى أن تكوني بكل خير! لاحظنا أن درجتك في الاختبار الأخير 66 وهذا جيد، لكن نريد مساعدتك لتحسين نتائجك أكثر قبل الاختبار القادم بعد 6 أيام 📚 هل تحتاجين إلى أي دعم أو شرح لأي مواضيع؟",
+  "action": "Call or message Fatima today to introduce yourself as her facilitator, assess any learning obstacles, and create a targeted study plan for the upcoming quiz in 6 days.",
+  "reasoning": "Fatima has never been contacted by a facilitator despite high risk status and a below-passing quiz score (66/100). Her perfect attendance shows commitment, making now the ideal time to establish support and prevent further score decline before the next assessment.",
+  "generated_at": "2026-06-19T20:13:58.420596+00:00"
+}

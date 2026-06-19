@@ -1,0 +1,17 @@
+{
+  "student_id": "S066",
+  "name": "Sara Al-Anzi",
+  "campus": "C02",
+  "risk_tier": "Critical",
+  "risk_score": 96,
+  "risk_flags": [
+    "Critical quiz failure",
+    "Stale follow-up",
+    "Remedial track",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم سارة 👋 لاحظت أنك لم تتواصلي معي في الأيام الأخيرة، وأنا قلق على أدائك في الاختبار الأخير 📊 عندك 6 أيام فقط قبل الاختبار القادم، فلنجتمع اليوم أو غدا حتى أساعدك تحسني درجاتك بإذن الله 💪",
+  "action": "Call or message Sara today to schedule an urgent 1-on-1 review session focused on the concepts from the failed quiz before the assessment in 6 days.",
+  "reasoning": "Sara has a critical quiz failure (34/100) with only 6 days to recover, and no facilitator contact for 10 days despite 100% attendance—immediate intervention is essential to prevent further decline and rebuild her confidence on the remedial track.",
+  "generated_at": "2026-06-19T20:13:15.747950+00:00"
+}

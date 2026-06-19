@@ -1,0 +1,17 @@
+{
+  "student_id": "S113",
+  "name": "Omar Al-Qaisi",
+  "campus": "C03",
+  "risk_tier": "Critical",
+  "risk_score": 96,
+  "risk_flags": [
+    "Critical quiz failure",
+    "Stale follow-up",
+    "Remedial track",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم يا عمر 👋 لاحظت انك حصلت على 31 في الاختبار الأخير، وأنا هنا لمساعدتك تحسّن درجاتك قبل الاختبار الجاي بـ 6 أيام 💪 هل نقدر نركز مع بعض على المواضيع الصعبة؟",
+  "action": "Schedule an urgent 1-on-1 session with Omar today or tomorrow to diagnose specific knowledge gaps from the failed quiz and create a 6-day study plan.",
+  "reasoning": "Omar's 10-day communication gap combined with a critical quiz failure (31/100) on a remedial track poses immediate risk of dropout or further decline. His perfect attendance shows commitment, but he needs targeted intervention now—6 days remain to prevent another failing score.",
+  "generated_at": "2026-06-19T20:13:33.955225+00:00"
+}

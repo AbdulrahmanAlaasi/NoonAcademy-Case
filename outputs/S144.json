@@ -1,0 +1,18 @@
+{
+  "student_id": "S144",
+  "name": "Amal Al-Salem",
+  "campus": "C04",
+  "risk_tier": "Critical",
+  "risk_score": 100,
+  "risk_flags": [
+    "Critical quiz failure",
+    "Short sessions",
+    "Never contacted",
+    "Remedial track",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم أمل 👋 لاحظنا أنك حصلت على 21 في الكويز الأخير، وأنا هنا لأساعدك تحسّن النتيجة في الكويز الجاي بعد 6 أيام 💪 هل تقدر نتكلم اليوم شوية عن الأجزاء الصعبة عندك؟",
+  "action": "Call Amal today to establish first contact, understand specific learning barriers in remedial material, and schedule a focused review session before the next quiz in 6 days.",
+  "reasoning": "Amal has never been contacted despite critical quiz failure (21/100) and is on a remedial track with only 6 days until the next assessment. Early intervention through direct communication is essential to prevent further academic decline and demonstrate institutional support.",
+  "generated_at": "2026-06-19T20:11:54.255879+00:00"
+}

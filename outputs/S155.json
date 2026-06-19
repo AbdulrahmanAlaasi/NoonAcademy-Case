@@ -1,0 +1,18 @@
+{
+  "student_id": "S155",
+  "name": "Hassan Al-Balawi",
+  "campus": "C04",
+  "risk_tier": "Critical",
+  "risk_score": 100,
+  "risk_flags": [
+    "Critical quiz failure",
+    "Short sessions",
+    "Never contacted",
+    "Remedial track",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم حسن! 👋 أتمنى أن تكون بخير. لاحظت أنك حصلت على 19/100 في الاختبار الأخير، وأنا هنا لمساعدتك تحسن درجاتك قبل الاختبار القادم بعد 6 أيام. هل تريد أن نركز على المواضيع الصعبة معاً؟ 💪",
+  "action": "Call Hassan today to introduce yourself, understand his learning challenges, and schedule a focused tutoring session covering the weak areas identified in his quiz performance before the next assessment in 6 days.",
+  "reasoning": "Hassan has never been contacted despite critical quiz failure (19/100) and is on a remedial track, representing an extreme intervention gap. With only 6 days until the next quiz and perfect attendance showing engagement potential, immediate personal outreach is essential to prevent further failure and academic disengagement.",
+  "generated_at": "2026-06-19T20:12:06.727702+00:00"
+}

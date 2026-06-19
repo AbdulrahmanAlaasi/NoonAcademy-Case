@@ -1,0 +1,17 @@
+{
+  "student_id": "S102",
+  "name": "Sara Al-Shammari",
+  "campus": "C03",
+  "risk_tier": "Critical",
+  "risk_score": 96,
+  "risk_flags": [
+    "Critical quiz failure",
+    "Stale follow-up",
+    "Remedial track",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم سارة 👋 لاحظنا أن درجة الاختبار الأخير كانت 41، وحنا هنا علشان نساعدك تتحسني قبل الاختبار الجاي بـ 6 أيام 💪 هل تقدري تشوفينا غدا أو بكرة عشان نراجع المواضيع الصعبة معاك؟",
+  "action": "Call or message Sara today to schedule an urgent 45-minute one-on-one review session covering the quiz topics before the next assessment in 6 days.",
+  "reasoning": "Sara has high attendance but critical quiz failure (41/100) with no facilitator contact for 10 days. With only 6 days until the next quiz and her high-risk status, immediate intervention is essential to prevent further academic deterioration.",
+  "generated_at": "2026-06-19T20:13:30.589901+00:00"
+}

@@ -1,0 +1,16 @@
+{
+  "student_id": "S056",
+  "name": "Maryam Al-Harbi",
+  "campus": "C02",
+  "risk_tier": "High",
+  "risk_score": 78,
+  "risk_flags": [
+    "Below passing threshold",
+    "Never contacted",
+    "No improvement since last intervention"
+  ],
+  "whatsapp_message": "السلام عليكم مريم 👋 نحن في أكاديمية بون نود أن نتحقق عليك وندعمك في مسيرتك التعليمية قبل الاختبار القادم خلال 6 أيام 📚 درجتك الحالية 67 جيدة، لكننا نريد مساعدتك للوصول لأفضل أداء - هل تحتاجين إلى أي شرح أو استفسار؟",
+  "action": "Contact Maryam via WhatsApp today to introduce yourself as her facilitator, assess her understanding of recent material, and schedule a check-in session before the quiz in 6 days.",
+  "reasoning": "Maryam has never been contacted by a facilitator despite having a high-risk score of 60/100 and quiz performance just above the passing threshold. Early intervention before her next quiz is critical to prevent further decline and improve her academic outcomes.",
+  "generated_at": "2026-06-19T20:14:03.107177+00:00"
+}
