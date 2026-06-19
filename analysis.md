@@ -12,16 +12,20 @@ the two costs that actually block action: deciding *who* to contact and deciding
 ## What you found in the data
 
 - **62% of students (125/200) have never been contacted.** Facilitator notes
-  cluster on a small set of students — the majority are invisible to the current
-  workflow regardless of how they're doing. This single gap explains the 30%.
-- **20% (40/200) failed Quiz 1 (score < 50), and 16 of them have zero notes.**
-  The highest-need students are precisely the ones getting no follow-up — failure
-  and silence overlap rather than cancel out.
-- **Attendance is not the bottleneck — engagement quality is.** Only 1 student
-  attends under 60% of sessions; disengagement instead shows up as short or
-  zero-minute *recent* sessions (e.g. students dropping from 90 to 20 min) and
-  missed practice. So risk is driven by quiz failure + no contact, with the next
-  quiz 6 days out forcing urgency now.
+  cluster on 75 students; the other 125 are invisible to the current workflow
+  regardless of performance. Notes also spike reactively — 74 of 180 total notes
+  landed on the final day of the window, Day 14. This single gap explains the 30%.
+- **41 students (20%) failed Quiz 1 with scores below 50 (average: 28.9/100),
+  and 16 of them have zero facilitator notes ever.** The highest-need students
+  are precisely the ones getting no follow-up — failure and silence overlap
+  rather than cancel out.
+- **93% of Remedial-track students (54/58) are scoring below the 70-point
+  passing threshold.** The Remedial cohort is in near-total crisis: the track
+  meant for students who need more support is receiving the same reactive,
+  coverage-limited attention as the rest.
+- **Attendance is not the bottleneck — quiz performance and contact silence are.**
+  The next quiz is 6 days out for all students, making urgency uniform and
+  making *today* the right moment to intervene.
 
 ## What you built and why
 
@@ -39,7 +43,8 @@ the two costs that actually block action: deciding *who* to contact and deciding
   escalate instead of being re-served identically.
 - **Facilitator dashboard** (`api.py` + static HTML): risk-sorted list, campus
   filter, copy-ready message — built around how facilitators actually triage. On
-  this snapshot all 52 at-risk (Critical+High) students get a brief.
+  this snapshot, 57 briefs cover all 52 Critical+High students (100%) plus 5
+  Medium-tier students, lifting the effective intervention rate to 100% of at-risk.
 
 ## What you cut and why
 
