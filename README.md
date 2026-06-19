@@ -10,17 +10,18 @@ message + English action) via Claude Haiku. Goal: lift intervention rate from
 ## Setup & Run
 
 ```bash
-pip install -r requirements.txt
-cp .env.example .env   # add ANTHROPIC_API_KEY
+export ANTHROPIC_API_KEY=sk-ant-...   # required for real LLM briefs
 python main.py
 ```
 
-That's the only command. It loads + cleans data, scores every student, generates
-briefs (cached in SQLite, written to `outputs/`), and serves the dashboard at
-http://localhost:8000.
+That's the only command. `main.py` self-installs dependencies from
+`requirements.txt` on first run, then loads + cleans data, scores every student,
+generates briefs (cached in SQLite, written to `outputs/`), and serves the
+dashboard at http://localhost:8000.
 
-CSVs go in `./data/`. All config via env vars — see `.env.example`. Without an
-API key the pipeline still runs; LLM briefs fall back to placeholders.
+CSVs go in `./data/`. All config via env vars (optionally a `.env` file — see
+`.env.example`). Without an API key the pipeline still runs; LLM briefs fall back
+to placeholders.
 
 ## What you see
 
