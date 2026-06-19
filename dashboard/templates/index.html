@@ -560,7 +560,8 @@
       <select class="campus-filter" id="campusFilter" onchange="applyFilter()">
         <option value="all">All Campuses</option>
       </select>
-      <button class="refresh-btn" id="refreshBtn" onclick="loadData()">↺ Refresh</button>
+      <button class="refresh-btn" id="pipelineBtn" onclick="triggerPipeline()">↺ Re-run Pipeline</button>
+      <button class="refresh-btn" id="refreshBtn" onclick="loadData()">↻ Refresh View</button>
     </div>
   </header>
 
@@ -894,6 +895,39 @@
         .replace(/</g, '&lt;')
         .replace(/>/g, '&gt;')
         .replace(/"/g, '&quot;');
+    }
+
+    // ── Trigger pipeline ──────────────────────────────────
+    async function triggerPipeline() {
+      const btn = document.getElementById('pipelineBtn');
+      btn.textContent = '⏳ Running…';
+      btn.classList.add('spinning');
+
+      try {
+        const res = await fetch('/api/pipeline/run', { method: 'POST' });
+        const data = await res.json();
+        if (data.status === 'already_running') {
+          showToast('Pipeline already running…');
+          btn.textContent = '↺ Re-run Pipeline';
+          btn.classList.remove('spinning');
+          return;
+        }
+        // Poll until done
+        const poll = setInterval(async () => {
+          const s = await fetch('/api/pipeline/status').then(r => r.json());
+          if (!s.running) {
+            clearInterval(poll);
+            btn.textContent = '↺ Re-run Pipeline';
+            btn.classList.remove('spinning');
+            await loadData();
+            showToast('Pipeline complete — data refreshed');
+          }
+        }, 2000);
+      } catch (err) {
+        showToast('Pipeline trigger failed');
+        btn.textContent = '↺ Re-run Pipeline';
+        btn.classList.remove('spinning');
+      }
     }
   </script>
 

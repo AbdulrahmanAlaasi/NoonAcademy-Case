@@ -6,11 +6,13 @@ pipeline in main.py) and exposes the endpoints the dashboard expects.
 
 import logging
 import os
+import threading
 
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import FileResponse
 
 from models import DailyMetric, InterventionBrief, SessionLocal, Student
+from pipeline import is_running, last_run, run_pipeline
 
 logger = logging.getLogger(__name__)
 
@@ -45,6 +47,26 @@ def _latest_brief(session, student_id: str):
 def dashboard():
     """Serve the single-page facilitator dashboard (static HTML)."""
     return FileResponse(DASHBOARD_HTML, media_type="text/html")
+
+
+@app.post("/api/pipeline/run")
+def trigger_pipeline():
+    """Trigger a pipeline run in the background. Returns 409 if already running."""
+    if is_running():
+        return {"status": "already_running"}
+    thread = threading.Thread(target=run_pipeline, daemon=True)
+    thread.start()
+    return {"status": "started"}
+
+
+@app.get("/api/pipeline/status")
+def pipeline_status():
+    """Return whether the pipeline is running and when it last completed."""
+    lr = last_run()
+    return {
+        "running": is_running(),
+        "last_run": lr.isoformat() if lr else None,
+    }
 
 
 @app.get("/api/students")
