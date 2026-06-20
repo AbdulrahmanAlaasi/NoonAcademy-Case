@@ -31,12 +31,13 @@ Server starts on `PORT` (default 8000). Dashboard at http://localhost:8000.
 .
 ├── CLAUDE.md               ← you are here
 ├── README.md               ← ≤30 lines, hard limit
-├── main.py                 ← orchestrator + uvicorn start
+├── main.py                 ← bootstrap + one-time pipeline run + uvicorn start
+├── pipeline.py             ← pipeline orchestration (imported by main + api)
 ├── data.py                 ← CSV loading + cleaning
 ├── models.py               ← SQLAlchemy ORM models
 ├── scoring.py              ← rule-based risk engine (NO LLM here)
 ├── llm.py                  ← Claude Haiku integration + caching
-├── api.py                  ← FastAPI app + routes
+├── api.py                  ← FastAPI app + routes (incl. /api/pipeline/run)
 ├── requirements.txt
 ├── .env.example
 ├── data/                   ← CSVs go here
