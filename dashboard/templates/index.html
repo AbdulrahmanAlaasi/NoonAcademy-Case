@@ -560,6 +560,9 @@
       <select class="campus-filter" id="campusFilter" onchange="applyFilter()">
         <option value="all">All Campuses</option>
       </select>
+      <select class="campus-filter" id="facilitatorFilter" onchange="applyFilter()">
+        <option value="all">All Facilitators</option>
+      </select>
       <button class="refresh-btn" id="pipelineBtn" onclick="triggerPipeline()">↺ Re-run Pipeline</button>
       <button class="refresh-btn" id="refreshBtn" onclick="loadData()">↻ Refresh View</button>
     </div>
@@ -647,6 +650,7 @@
         const summary = await summaryRes.json();
 
         populateCampusFilter(allStudents);
+        populateFacilitatorFilter(allStudents);
         renderSummary(summary);
         renderStudentList(allStudents);
 
@@ -673,9 +677,27 @@
       });
     }
 
+    // ── Facilitator filter ────────────────────────────────
+    function populateFacilitatorFilter(students) {
+      const select = document.getElementById('facilitatorFilter');
+      const facilitators = [...new Set(students.map(s => s.facilitator_id))].sort();
+      // Keep 'All Facilitators', clear rest
+      while (select.options.length > 1) select.remove(1);
+      facilitators.forEach(f => {
+        const opt = document.createElement('option');
+        opt.value = f;
+        opt.textContent = f;
+        select.appendChild(opt);
+      });
+    }
+
     function applyFilter() {
       const campus = document.getElementById('campusFilter').value;
-      const filtered = campus === 'all' ? allStudents : allStudents.filter(s => s.campus === campus);
+      const facilitator = document.getElementById('facilitatorFilter').value;
+      const filtered = allStudents.filter(s =>
+        (campus === 'all' || s.campus === campus) &&
+        (facilitator === 'all' || s.facilitator_id === facilitator)
+      );
       renderStudentList(filtered);
       // Clear brief if selected student not in filtered list
       if (selectedId && !filtered.find(s => s.student_id === selectedId)) {
